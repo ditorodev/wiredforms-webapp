@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node server/main.js",
-    "build": "webpack --mode production"
+    "start": "nodemon --exec babel-node src/server/index.js",
+    "build": "webpack -w --mode production --config ./webpack.config.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,11 +15,16 @@
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
     "google-auth-library": "^3.1.2",
+    "isomorphic-fetch": "^2.2.1",
     "nodemon": "^1.18.10",
+    "pg": "^7.9.0",
+    "pg-hstore": "^2.3.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "sequelize": "^5.2.8"
+    "react-router-dom": "^5.0.0",
+    "sequelize": "^5.2.8",
+    "serialize-javascript": "^1.6.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
